@@ -11,7 +11,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class splashscreen extends AppCompatActivity {
+public class Splashscreen extends AppCompatActivity {
     Animation animation, button;
     ImageView image;
     TextView text1, text2;
@@ -20,7 +20,7 @@ public class splashscreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_splashscreen);
+        setContentView(R.layout.splashscreen);
 
         image = findViewById(R.id.image1);
         text1 = findViewById(R.id.tv1);
@@ -35,10 +35,10 @@ public class splashscreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(splashscreen.this, MainActivity.class);
+                Intent intent = new Intent(Splashscreen.this, Home.class);
                 startActivity(intent);
                 finish();
             }
-        }, 2000);
+        }, 5000);
     }
 }
