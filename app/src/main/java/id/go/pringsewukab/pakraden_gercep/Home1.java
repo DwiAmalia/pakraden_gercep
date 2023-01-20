@@ -10,17 +10,18 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import id.go.pringsewukab.pakraden_gercep.databinding.ActivityHomeBinding;
+import id.go.pringsewukab.pakraden_gercep.databinding.ActivityHome1Binding;
 
-public class Home extends AppCompatActivity {
 
-    private ActivityHomeBinding binding;
+public class Home1 extends AppCompatActivity {
+
+    private ActivityHome1Binding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityHomeBinding.inflate(getLayoutInflater());
+        binding = ActivityHome1Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
